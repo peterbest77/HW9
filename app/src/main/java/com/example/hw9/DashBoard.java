@@ -226,7 +226,7 @@ public class DashBoard extends AppCompatActivity {
                                     String state = entry.getValue();
                                     System.out.println(state);
                                     String cityAndState1 = city + "," +state;
-                                    String url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + city + "+" + state +"&key=AIzaSyCPX__rKKqlkJ_my9RfEbYFWQykPEB9SwU";
+                                    String url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + city + "+" + state +"key";
 
                                     String url1 = url;
                                     JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url1, null, new Response.Listener<JSONObject>() {
@@ -498,7 +498,7 @@ public class DashBoard extends AppCompatActivity {
             @Override
             public boolean onQueryTextChange(String newText)
             {
-                        String url = "https://maps.googleapis.com/maps/api/place/autocomplete/json?input="+ newText+ "&types=(cities)&key=AIzaSyCYBTxxl7O-Jothulmd1oe3Dcl-pnFUn2g";
+                        String url = "https://maps.googleapis.com/maps/api/place/autocomplete/json?input="+ newText+ "&types=(cities)&key";
 
         System.out.println("3" + url);
 
